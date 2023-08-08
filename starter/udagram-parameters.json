@@ -1,0 +1,14 @@
+[
+	{
+		"ParameterKey": "EnvironmentName",
+		"ParameterValue": "dev"
+	},
+	{
+		"ParameterKey": "InstanceType",
+		"ParameterValue":"t3.medium"
+	},
+	{
+		"ParameterKey": "AMIId",
+		"ParameterValue": "ami-03d7e1cd526d560e1"
+	}
+]
