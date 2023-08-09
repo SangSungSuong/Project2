@@ -5,7 +5,7 @@ Parameters:
     EnvironmentName:
         Description: An environment name that will be prefixed to resource names
         Type: String
-        Default: dev
+        Default: SangVV
 
     VpcCIDR: 
         Description: Please enter the IP range (CIDR notation) for this VPC
@@ -13,22 +13,22 @@ Parameters:
         Default: 10.0.0.0/16
 
     PublicSubnet1CIDR:
-        Description: Enter the IP range (CIDR) for the Private Subnet 1
+        Description: Enter the IP range (CIDR) for the Public Subnet 1
         Type: String
         Default: 10.0.0.0/24
 
     PublicSubnet2CIDR:
-        Description: Enter the IP range (CIDR) for the Private Subnet 2
+        Description: Enter the IP range (CIDR) for the Public Subnet 2
         Type: String
         Default: 10.0.1.0/24
 
     PrivateSubnet1CIDR:
-        Description: Enter the IP range (CIDR) for the Public Subnet 1
+        Description: Enter the IP range (CIDR) for the Private Subnet 1
         Type: String
         Default: 10.0.2.0/24
 
     PrivateSubnet2CIDR:
-        Description: Enter the IP range (CIDR) for the Public Subnet 2
+        Description: Enter the IP range (CIDR) for the Private Subnet 2
         Type: String
         Default: 10.0.3.0/24
 
@@ -233,25 +233,25 @@ Outputs:
           Name: !Sub ${EnvironmentName}-PRIV-NETS
 
     PublicSubnet1:
-        Description: Reference to the first public subnet
+        Description: A reference to the public subnet in the 1st Availability Zone
         Value: !Ref PublicSubnet1
         Export:
           Name: !Sub ${EnvironmentName}-PUB1-SN
 
     PublicSubnet2: 
-        Description: Reference to the second public subnet
+        Description: A reference to the public subnet in the 2nd Availability Zone
         Value: !Ref PublicSubnet2
         Export:
           Name: !Sub ${EnvironmentName}-PUB2-SN
 
     PrivateSubnet1:
-        Description: Reference to the first private subnet
+        Description: A reference to the private subnet in the 1st Availability Zone
         Value: !Ref PrivateSubnet1
         Export:
           Name: !Sub ${EnvironmentName}-PRI1-SN
-          
+
     PrivateSubnet2: 
-        Description: Reference to the second private subnet
+        Description: A reference to the private subnet in the 2nd Availability Zone
         Value: !Ref PrivateSubnet2
         Export:
           Name: !Sub ${EnvironmentName}-PRI2-SN

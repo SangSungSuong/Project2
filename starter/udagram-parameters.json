@@ -1,14 +1,14 @@
 [
 	{
 		"ParameterKey": "EnvironmentName",
-		"ParameterValue": "dev"
+		"ParameterValue": "SangVV"
 	},
 	{
 		"ParameterKey": "InstanceType",
-		"ParameterValue":"t3.medium"
+		"ParameterValue":"t3.micro"
 	},
 	{
 		"ParameterKey": "AMIId",
-		"ParameterValue": "ami-03d7e1cd526d560e1"
+		"ParameterValue": "ami-053b0d53c279acc90"
 	}
 ]

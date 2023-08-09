@@ -1,11 +1,11 @@
 Description: 
-  Deploy a high-availability web app using CloudFormation
+   Project 2 - Deploy a high-availability web app using CloudFormation
 
 Parameters:
   EnvironmentName:
     Description: An environment name that will be prefixed to resource names
     Type: String
-    Default: dev
+    Default: SangVV
 
   InstanceType:
     Description: Instance type in EC2
@@ -69,7 +69,7 @@ Resources:
             sudo apt-get install nginx -y
             sudo service nginx start
             sudo chmod 777 -R /var/www/html
-            sudo echo "<p>Udagram</p>" > /var/www/html/index.html
+            sudo echo "<p>it works! Udagram, Udacity</p>" > /var/www/html/index.html
             sudo service nginx restart
         ImageId: !Ref AMIId
         SecurityGroupIds:
