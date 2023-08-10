@@ -5,10 +5,10 @@
 	},
 	{
 		"ParameterKey": "InstanceType",
-		"ParameterValue":"t2.micro"
+		"ParameterValue":"c5.large"
 	},
 	{
 		"ParameterKey": "AMIId",
-		"ParameterValue": "ami-08a52ddb321b32a8c"
+		"ParameterValue": "ami-053b0d53c279acc90"
 	}
 ]
