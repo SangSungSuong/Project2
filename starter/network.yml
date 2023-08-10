@@ -1,5 +1,5 @@
 Description: 
-    Project 2 - Deploy a high-availability web app using CloudFormation
+    Project 2 - Deploy a high-availability web app using CloudFormation - Network
 
 Parameters:
     EnvironmentName:
